@@ -1,0 +1,147 @@
+/* Paleta Alke Wallet */
+:root {
+  --alke-dark: #0d0d1a;
+  --alke-purple: #6c2bd9;
+  --alke-purple-light: #9b59f5;
+  --alke-purple-soft: #1a1035;
+  --alke-accent: #c084fc;
+}
+
+body {
+  background-color: var(--alke-dark);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--alke-purple-soft);
+  border-bottom: 1px solid rgba(108, 43, 217, 0.3);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--alke-accent) !important;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #ccc !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--alke-accent) !important;
+}
+
+.btn-outline-light {
+  border-color: var(--alke-purple-light);
+  color: var(--alke-purple-light);
+  border-radius: 20px;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--alke-purple);
+  border-color: var(--alke-purple);
+  color: white;
+}
+
+.hero {
+  position: relative;
+  background-image: url('../img/fondo.gif');
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.hero p {
+  color: #bbb;
+  font-size: 1.2rem;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--alke-purple), var(--alke-purple-light));
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 43, 217, 0.5);
+  color: white;
+}
+
+.btn-outline-custom {
+  border: 2px solid var(--alke-purple-light);
+  color: var(--alke-purple-light);
+  border-radius: 25px;
+  font-weight: 600;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--alke-purple);
+  color: white;
+  border-color: var(--alke-purple);
+}
+
+/* Cards */
+.card-feature {
+  background-color: var(--alke-purple-soft);
+  border: 1px solid rgba(108, 43, 217, 0.3);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  height: 100%;
+}
+
+.card-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(108, 43, 217, 0.3);
+}
+
+.card-feature .icon {
+  font-size: 2.5rem;
+}
+
+.card-feature h5 {
+  color: var(--alke-accent);
+}
+
+/* Footer */
+footer {
+  background-color: var(--alke-purple-soft);
+  border-top: 1px solid rgba(123, 88, 203, 0.2);
+  color: #aaa !important;
+}
+
+.card-feature p {
+  color: #ccc !important;
+}
+
+footer p {
+  color: #aaa !important;
+}
+.text-muted {
+  color: #aaa !important;
+}
+
+.card-feature img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
